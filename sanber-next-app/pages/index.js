@@ -6,7 +6,7 @@ import Layout from "@/layout";
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout metaTitle="Home" metaDescription="Ini Halaman Home">
       <p>Ini Halaman Home</p>
     </Layout>
   );
