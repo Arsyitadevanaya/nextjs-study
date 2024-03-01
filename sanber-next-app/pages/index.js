@@ -1,13 +1,17 @@
-import Head from "next/head";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
-import Layout from "@/layout";
+
+// import Layout from "@/layout";
+import Image from "next/image";
+import dynamic from "next/dynamic";
+
+const layoutDynamic=dynamic(() => import("@/layout"))
 
 
 export default function Home() {
   return (
-    <Layout metaTitle="Home" metaDescription="Ini Halaman Home">
+    <layoutDynamic metaTitle="Home" metaDescription="Ini Halaman Home">
       <p>Ini Halaman Home</p>
-    </Layout>
+      <Image src="/gambar.png" width={100} height={100} alt="Gambar" />
+      <img src="/gambar.png" style={{ width:100, height:100 }}  />
+    </layoutDynamic>
   );
 }
