@@ -8,6 +8,7 @@ export default function Menu() {
                 <li className="mr-5"><Link href="/profile">Profile</Link></li>
                 <li className="mr-5"><Link href="/users">Users</Link></li>
                 <li className="mr-5"><Link href="/users/detail">User Detail</Link></li>
+                <li className="mr-5"><Link href="/notes">Notes</Link></li>
             </ul>
         </div>
     )
